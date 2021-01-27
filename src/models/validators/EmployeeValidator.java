@@ -31,7 +31,6 @@ public class EmployeeValidator {
     }
 
     private static String validateCode(String code, Boolean codeDuplicateCheckFlag) {
-
         if(code == null || code.equals("")) {
             return "社員番号を入力してください。";
         }
@@ -59,10 +58,10 @@ public class EmployeeValidator {
     }
 
     private static String validatePassword(String password, Boolean passwordCheckFlag) {
-
         if(passwordCheckFlag && (password == null || password.equals(""))) {
             return "パスワードを入力してください。";
         }
         return "";
     }
 }
+
